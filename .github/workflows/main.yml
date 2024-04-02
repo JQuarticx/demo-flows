@@ -1,0 +1,12 @@
+name: find the repo pom.xml version details
+
+on: [push]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Perform REST API request
+        run: |
+          curl -X GET https://api.github.com
